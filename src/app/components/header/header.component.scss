@@ -1,20 +1,37 @@
 @import '../../../style/_variables';
 @import '../../../style/_baseMixins';
+@import '../../../style/_baseClasses';
 .app-header {
   @include base-padding();
-  height: 50px;
-  background: #343a40;
-  transition: all .3s ease-in-out;
+  background: rgba($header-color,.6);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  height: 50px;
   @include tablet() {
     height: 80px;
-    transition: all .3s ease-in-out;
   }
   @include desktop() {
     height: 100px;
-    transition: all .3s ease-in-out;
+  }
+  &_logo {
+    max-height: 30px;
+    @include tablet() {
+      max-height: 60px;
+    }
+    @include desktop() {
+      max-height: 80px;
+    }
+  }
+  &_items {
+    color: white;
+    font-size: 12px;
+    @include tablet() {
+      font-size: 16px;
+    }
+    @include desktop() {
+      font-size: 20px;
+    }
   }
 }
