@@ -1,0 +1,5 @@
+@import '../../../style/_variables';
+@import '../../../style/_baseMixins';
+.app-home-page-content{
+  @include base-padding();
+}

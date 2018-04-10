@@ -1,0 +1,20 @@
+@import '../../../style/_variables';
+@import '../../../style/_baseMixins';
+.app-header {
+  @include base-padding();
+  height: 50px;
+  background: #343a40;
+  transition: all .3s ease-in-out;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  @include tablet() {
+    height: 80px;
+    transition: all .3s ease-in-out;
+  }
+  @include desktop() {
+    height: 100px;
+    transition: all .3s ease-in-out;
+  }
+}
