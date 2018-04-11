@@ -1,3 +1,6 @@
 .with-transition {
   transition: all $anim-duration ease-in-out;
+  &.transitions-disabled {
+    transition: none;
+  }
 }

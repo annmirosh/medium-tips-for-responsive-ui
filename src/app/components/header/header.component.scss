@@ -3,7 +3,7 @@
 @import '../../../style/_baseClasses';
 .app-header {
   @include base-padding();
-  background: rgba($header-color,.6);
+  background: rgba($header-color, .6);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -32,6 +32,13 @@
     }
     @include desktop() {
       font-size: 20px;
+    }
+    &_links {
+      margin: 0 8px;
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
     }
   }
 }
